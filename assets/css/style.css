@@ -104,9 +104,6 @@ a:hover {
 .mb-30{
 	margin-bottom:30px;
 }
-.mt-100{
-	margin-top:100px;
-}
 
 /* 1. Preloader */
 
@@ -279,7 +276,6 @@ a.box-btn:hover i.fa {
 	padding: 5px 0;
 	position: fixed;
 	z-index: 999;
-	width: 100%;
 	left: 0;
 	top: 0;
 }
@@ -290,7 +286,7 @@ a.box-btn:hover i.fa {
 	color: #635CDB !important;
 }
 .header-top {
-  background-color:#209DF0;
+  background-color:#fff;
   color: #fff;
   padding: 10px 0;
 }
@@ -307,14 +303,24 @@ a.box-btn:hover i.fa {
 	-webkit-transition: .3s;
 	transition: .3s;
 }
-.header a {
-	color: #333 !important;
+.title {
+	color: #209DF0 ;
+	font-size: 22px;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
 }
-
-.header-left a {
+/* .header a {
+	color: #209DF0 ;
+} */
+.header a.title{color: #209DF0 ;}
+.header a:hover {
+    color: #209DF0;
+}
+/* .header-left a {
   font-size: 13px;
   margin-right: 15px;
-}
+} */
 .header-social a {
   margin-left: 10px;
 }
@@ -338,7 +344,7 @@ a.box-btn:hover i.fa {
 	color: #FF7200;
 }
 .header.header-fixed.sticky a {
-	color: #333 !important;
+	color: #333 ;
 }
 .dropdown-menu.my-dropdown-menu.show {
   margin-top: 29px;
@@ -356,38 +362,24 @@ a.box-btn:hover i.fa {
 }
 
 /* side menu bar */
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 9999;
-  top: 0;
-  right: 0;
-  background-color: #fff;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+.sidenav{
+	height: 100%;
 }
-
 .sidenav a {
-  padding: 8px 8px 18px 32px;
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   color: #818181;
   display: block;
   transition: 0.3s;
+  border-bottom: 2px dotted #22202212;
 }
 
 .sidenav a:hover {
-  color: #209DF0;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+  background-color: #209DF0;
+  color: #fff;
+  font-weight:bold;
+  transition: 0.5s;
 }
 
 @media screen and (max-height: 450px) {
@@ -406,9 +398,8 @@ a.box-btn:hover i.fa {
 }
 
 .slider-area {
-	height: 100%;
+	height: 100vh;
 }
-
 .single-slide:before {
 	position: absolute;
 	content: "";
@@ -424,7 +415,7 @@ a.box-btn:hover i.fa {
 
 .slide-table {
 	width: 100%;
-	height: 100%;
+	height: 80vh;
 	display: table;
 	text-align: center
 }
@@ -437,7 +428,7 @@ a.box-btn:hover i.fa {
 }
 .slide-table h2 {
 	color: #fff;
-	font-size: 40px;
+	font-size: 30px;
 	line-height: 1.2;
 	font-weight: 700;
 	margin: 20px 0;
@@ -467,11 +458,6 @@ a.box-btn:hover i.fa {
 
 .slider_text .border_btn a {
 	padding: 8px 20px;
-}
-
-.slider-area,
-.slider-area div {
-	height: 100%;
 }
 
 .slider_text,
@@ -666,7 +652,91 @@ a.box-btn:hover i.fa {
 .about-text {
 	padding: 10px 13px;
 }
+/* founders and developers area start  */
+.founders-and-developers-area {
+	padding-top: 30px;
+}
+.single-founders-and-developers {
+	margin-bottom: 30px;
+	transition:.8s;
+}
+.single-founders-and-developers img {
+	width: 100%;
+	height: 100%;
+}
+.single-founders-and-developers h3 {
+	color: #333;
+	margin: 16px 0 10px 0;
+	font-size: 16px;
+	font-weight: 400;
+}
+.single-founders-and-developers p {
+	font-size: 14px;
+	color: #6a6a6a;
+	text-transform: capitalize;
+}
 
+.founders-and-developers-img {
+	position: relative;
+	z-index: 99;
+	width: 262px;
+	height: 266px;
+}
+.inner-founders-and-developers {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.inner-founders-and-developers ul {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width:100%;
+}
+.inner-founders-and-developers ul li {
+  display: inline-block;
+  margin-right: 2px;
+}
+.inner-founders-and-developers ul li a i {
+  font-size: 18px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  text-align: center;
+  line-height: 38px; 
+  color: #ffffff;
+  transform:scale(0);
+  transition:.5s;
+}
+.founders-and-developers-img::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: #00AEEF;
+  opacity: .7;
+  visibility:hidden;
+  transform:scale(0);
+  transition:.8s;
+}
+.founders-and-developers-img img {
+  width: 100%;
+  height: 266px;
+}
+.single-founders-and-developers:hover .founders-and-developers-img::before {
+	visibility:visible;
+	transform:scale(1);
+	transition:.8s;
+}
+.single-founders-and-developers:hover .inner-founders-and-developers ul li a i{
+	visibility:visible;
+	transform:scale(1);
+	transition:.5s;
+}
 /* advisors-info area */
 .single-advisors-info.pt-50.pb-50 {
   border: 1px solid #ddd;
@@ -719,76 +789,7 @@ a.box-btn:hover i.fa {
 	margin-top: 50px;
 }
 /* --------HOME PAGE END---------- */
-/* FAQ PAGE AREA START */
-.card-header, .card-link,.card-link:hover{
-	background-color:#000;
-	text-align:left;
-	color:hotpink;
-}
-.card-body{
-	padding:10px 10px;
-}
-.card{
-	/* width:500px; */
-}
-.card-link p{position:absolute;top:5px;right:20px;font-size:20px;color:white;
--webkit-animation: minus 0.5s;}
 
-@keyframes minus {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
-}
-
-[aria-expanded="false"] > .expanded, [aria-expanded="true"] > .collapsed {display: none;}
-.my-accordion{
-	margin:100px 0 100px 0;
-}
-/* progress bar */
-.progress-barr h2 {
-	text-align: center;
-	margin-bottom: 45px;
-	font-size: 35px;
-}
-.circle {
-  width: 200px;
-  margin: 6px 6px 20px;
-  display: inline-block;
-  position: relative;
-  text-align: center;
-  line-height: 1.2;
-}
-
-.circle canvas {
-  vertical-align: top;
-  width: 200px !important;
-}
-
-.circle strong {
-  position: absolute;
-  top: 30px;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  line-height: 40px;
-  font-size: 30px;
-  color: black;
-}
-
-.circle strong i {
-  font-style: normal;
-  font-size: 0.6em;
-  font-weight: normal;
-}
-
-.circle span {
-  display: block;
-  color: #aaa;
-  margin-top: 12px;
-}
 /* CONTACT PAGE AREA START */
 
 .single-con-info.pt-50.pb-50 {
@@ -865,7 +866,41 @@ a.box-btn:hover i.fa {
 	margin: 0 auto;
 	text-align: center;
 }
-/* photography package page start */
+/* FAQ PAGE AREA START */
+.card-header, .card-link,.card-link:hover{
+	background-color:#333;
+	text-align:left;
+	color:#fff;
+}
+.card-body{
+	padding:10px 10px;
+}
+.card-header a{
+	text-transform: uppercase;
+	font-size: 20px;
+	text-align: centre;
+	font-style:italic;
+	font-weight: bolder;
+}
+.card{
+	/* width:500px; */
+}
+.card-link p{position:absolute;top:5px;right:20px;font-size:20px;color:white;
+-webkit-animation: minus 0.5s;}
+
+@keyframes minus {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+[aria-expanded="false"] > .expanded, [aria-expanded="true"] > .collapsed {display: none;}
+.my-accordion{
+	margin:100px 0 100px 0;
+}
 
 .my-single-collapse {
   text-align: center;
