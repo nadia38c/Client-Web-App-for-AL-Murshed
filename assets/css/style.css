@@ -1,3 +1,4 @@
+/* client web app for al-murshed /*
 /* Base CSS */
 
 .alignleft {
@@ -295,9 +296,26 @@ a.box-btn:hover i.fa {
 }
 #navbarNav a {
 	font-weight: 500;
-	padding: 0px 12px;
-	color: #fff
+	padding: 0px 8px;
+	color: #333
 }
+.navbar-toggler-icon {
+	display: inline-block;
+	width: 1.20em;
+	height: 1.20em;
+	vertical-align: middle;
+	content: "";
+	background: no-repeat center center;
+	background-size: 91% 100%;
+}
+.navbar-toggler {
+	font-size: 15px;
+	line-height: 1px;
+	text-align: right;
+}
+/* #navbarNav {
+	display: none;
+} */
 .header {
 	padding: 10px 0;
 	-webkit-transition: .3s;
@@ -340,8 +358,12 @@ a.box-btn:hover i.fa {
 #navbarNav ul li:last-child a {
 	padding-right: 0;
 }
+.navbar-light .navbar-toggler {
+	color: rgba(0,0,0,.5);
+	border-color: #fff(!important);
+}
 .mainmenu ul li.current a, .mainmenu ul li a:hover {
-	color: #FF7200;
+	color: #333;
 }
 .header.header-fixed.sticky a {
 	color: #333 ;
@@ -376,17 +398,77 @@ a.box-btn:hover i.fa {
 }
 
 .sidenav a:hover {
-  background-color: #209DF0;
+  background-color: #0C2A3E5E;
   color: #fff;
   font-weight:bold;
   transition: 0.5s;
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 20px;}
+  .sidenav {padding-top: 10px;}
+  .sidenav {padding-left: 10px;}
   .sidenav a {font-size: 18px;}
+  .sidenav {width: 100%;}
+  .sidenav{ flex-direction: column; display: flex;}
+  
 }
 
+/* sidebar responsive */
+
+/* #toggle
+{
+	display: none;
+}
+.togglearea
+{
+	background-color: #transparent;
+	border-bottom: 2px solid white;
+	color: white;
+	padding: 10px;
+	display: flex;
+	justify-content: flex-end;
+}
+.togglearea label
+{
+	background-color: white;
+	height: 45px;
+	width: 50px;
+	color: black;
+	border-radius: 6px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.togglearea label span
+{
+	background-color: black;
+	height: 4px;
+	width: 70%;
+	margin: 2px 0px;
+}
+.togglearea
+{
+	display: none;
+}
+@media screen and (max-width: 700px)
+{
+	.navbar
+	{
+		flex-direction: column;
+		display: none;
+	}
+	#toggle:checked + .navbar
+	{
+		display: flex;
+	}
+	.togglearea
+	{	
+		display: flex;
+	}
+}
+ */
 /* Slider Area start */
 .single-slide {
 	background-size: cover;
