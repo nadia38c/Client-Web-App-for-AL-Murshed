@@ -198,7 +198,7 @@ a:hover {
 
 /* BTN Css */
 a.box-btn {
-	background-color: #209DF0;
+	background-color: #18A554;
 	display: inline-block;
 	color: #fff;
 	padding: 10px 25px;
@@ -210,7 +210,7 @@ a.box-btn {
 }
 
 a.border-btn {
-	border: 2px solid #635CDB;
+	border: 2px solid #18A554;
 	display: inline-block;
 	color: #fff;
 	padding: 8px 25px;
@@ -251,7 +251,7 @@ a.box-btn:hover i.fa {
   left: 50%;
   width: 100px;
   height: 2px;
-  background-color: #209DF0;
+  background-color: #18A554;
   margin-left: -50px;
   bottom: 13px;
 }
@@ -260,7 +260,7 @@ a.box-btn:hover i.fa {
   content: '';
   width: 12px;
   height: 12px;
-  background-color: #209DF0;
+  background-color: #18A554;
   border: 1px solid #DD4F42;
   transform: rotate(134deg);
   left: 50%;
@@ -322,7 +322,7 @@ a.box-btn:hover i.fa {
 	transition: .3s;
 }
 .title {
-	color: #209DF0 ;
+	color: #18A554 ;
 	font-size: 22px;
 	text-align: center;
 	font-weight: bold;
@@ -331,9 +331,9 @@ a.box-btn:hover i.fa {
 /* .header a {
 	color: #209DF0 ;
 } */
-.header a.title{color: #209DF0 ;}
+.header a.title{color: #18A554 ;}
 .header a:hover {
-    color: #209DF0;
+    color: #18A554;
 }
 /* .header-left a {
   font-size: 13px;
@@ -379,7 +379,7 @@ a.box-btn:hover i.fa {
   margin-right: 6px;
 }
 .dropdown-item:focus, .my-dropdown-item:hover {
-	background-color: #209DF0;
+	background-color: #18A554;
 	color: white !important;
 }
 
@@ -556,7 +556,7 @@ a.box-btn:hover i.fa {
 }
 
 .slider .owl-dots div.active {
-	background-color: #209DF0;
+	background-color: #18A554;
 }
 
 .slider .owl-controls {
@@ -594,7 +594,7 @@ a.box-btn:hover i.fa {
 	content: "";
 	width: 80px;
 	height: 2px;
-	background-color: #209DF0;
+	background-color: #18A554;
 	bottom: 0;
 	left: 50%;
 	margin-left: -40px;
@@ -611,7 +611,7 @@ a.box-btn:hover i.fa {
 }
 .card-header {
 	padding: 15px;
-	background-color: #209DF0;
+	background-color: #18A554;
 	border-bottom: 1px solid #635CDB;
 }
 
@@ -667,7 +667,7 @@ a.box-btn:hover i.fa {
 .single-exp h2 {
   font-size: 26px;
   padding: 20px 0;
-  color: #209DF0;
+  color: #18A554;
 }
 .single-exp p {
   text-align: justify;
@@ -799,7 +799,7 @@ a.box-btn:hover i.fa {
   content: '';
   width: 100%;
   height: 100%;
-  background-color: #00AEEF;
+  background-color: #18A554;
   opacity: .7;
   visibility:hidden;
   transform:scale(0);
