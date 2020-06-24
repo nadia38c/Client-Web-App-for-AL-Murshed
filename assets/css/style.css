@@ -747,10 +747,14 @@ a.box-btn:hover i.fa {
 	height: 100%;
 }
 .single-founders-and-developers h3 {
-	color: #333;
+	/* color: #18A554;
 	margin: 16px 0 10px 0;
 	font-size: 16px;
-	font-weight: 400;
+	font-weight: 400; */
+	font-size: 22px;
+	margin: 16px 0 10px 0;
+  /* margin-bottom: 20px; */
+	color: #18A554;
 }
 .single-founders-and-developers p {
 	font-size: 14px;
@@ -825,10 +829,11 @@ a.box-btn:hover i.fa {
   margin: 10p0x 0 0 0;
   margin: 50px 0 50px 0;
 }
-.single-advisors-info.pt-50.pb-50 h6 {
+.single-advisors-info.pt-50.pb-50 h6{
   text-align: center;
   font-size: 22px;
   margin-bottom: 20px;
+  color: #18A554;
 }
 .single-advisors-info.pt-50.pb-50 p {
   text-align: center;
