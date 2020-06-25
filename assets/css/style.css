@@ -238,6 +238,11 @@ a.box-btn:hover i.fa {
 	opacity: 1;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
+.btn.btn-primary {
+	color: #fff;
+	background-color: #18A554;
+	border-color: #18A554;
+}
 /* section title start */
 .section-title h2 {
   position: relative;
@@ -958,6 +963,51 @@ a.box-btn:hover i.fa {
 	display: block;
 	margin: 0 auto;
 	text-align: center;
+}
+/* hadith page */
+.single-hadith {
+  text-align: center;
+  padding: 25px;
+  min-height: 100px;
+}
+.single-hadith:hover {
+  box-shadow: 1px 1px 19px #ccc;
+}
+.single-hadith img {
+  width: 35px;
+  height: 35px;
+  margin: 20px 0;
+}
+.single-hadith h2 {
+  font-size: 26px;
+  padding: 20px 0;
+  color: #18A554;
+}
+.single-hadith p {
+  text-align: justify;
+  font-size: 14px;
+  font-family: 'Montserrat',sansserif;
+  font-weight: 400;
+}
+.modal-content h1{
+	font-size: 1.25rem;
+	font-weight: 400;
+	color: #18A554;
+}
+.hadith-popup{
+	font-size: 20px;
+	text-transform:capitalize;
+	font-weight: 500;
+	text-align: center;
+	color: #fff;
+	/* padding-top: 10px; */
+	background-color: #18A554;
+}
+.hadith-popup a{
+	color:#fff;
+}
+.hadith-popup a:hover{
+	color: #333;
 }
 /* FAQ PAGE AREA START */
 .card-header, .card-link,.card-link:hover{
