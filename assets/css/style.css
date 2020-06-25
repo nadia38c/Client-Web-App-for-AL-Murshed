@@ -680,6 +680,7 @@ a.box-btn:hover i.fa {
   font-size: 26px;
   padding: 20px 0;
   color: #18A554;
+  text-transform: capitalize;
 }
 .single-exp p {
   text-align: justify;
@@ -1001,14 +1002,15 @@ a.box-btn:hover i.fa {
 	font-weight: 400;
 	color: #18A554;
 }
-.hadith-popup{
-	font-size: 20px;
-	text-transform:capitalize;
+.hadith-popup {
+	font-size: 18px;
+	text-transform: capitalize;
 	font-weight: 500;
 	text-align: center;
 	color: #fff;
-	/* padding-top: 10px; */
+	padding: 15px;
 	background-color: #18A554;
+	margin: 15px;
 }
 .hadith-popup a{
 	color:#fff;
