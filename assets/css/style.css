@@ -75,10 +75,10 @@ a {
 	transition: .4s
 }
 
-a:hover {
-	color: #635CDB
+/* a:hover {
+	text-decoration: none;
 }
-
+ */
 .pt-100 {
 	padding-top: 100px;
 }
@@ -249,6 +249,7 @@ a.box-btn:hover i.fa {
   padding-bottom: 38px;
   display: inline-block;
   margin-bottom: 10px;
+  text-transform: capitalize;
 }
 .section-title h2::before {
   position: absolute;
@@ -988,6 +989,12 @@ a.box-btn:hover i.fa {
   font-size: 14px;
   font-family: 'Montserrat',sansserif;
   font-weight: 400;
+}
+.modal-body h2{
+	font-size:20px;
+	text-transform: capitalize;
+	font-weight: 400;
+	text-align: right;
 }
 .modal-content h1{
 	font-size: 1.25rem;
