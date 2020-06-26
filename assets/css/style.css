@@ -90,7 +90,12 @@ a {
 .pt-50 {
 	padding-top: 50px;
 }
-
+.pt-30 {
+	padding-top: 30px;
+}
+.pt-20 {
+	padding-top: 20px;
+}
 .pb-50 {
 	padding-bottom: 50px;
 }
@@ -105,7 +110,12 @@ a {
 .mb-30{
 	margin-bottom:30px;
 }
-
+.pb-30{
+	padding-bottom:30px;
+}
+.pb-20{
+	padding-bottom:20px;
+}
 /* 1. Preloader */
 
 .flex-center {
@@ -425,62 +435,6 @@ a.box-btn:hover i.fa {
   
 }
 
-/* sidebar responsive */
-
-/* #toggle
-{
-	display: none;
-}
-.togglearea
-{
-	background-color: #transparent;
-	border-bottom: 2px solid white;
-	color: white;
-	padding: 10px;
-	display: flex;
-	justify-content: flex-end;
-}
-.togglearea label
-{
-	background-color: white;
-	height: 45px;
-	width: 50px;
-	color: black;
-	border-radius: 6px;
-	cursor: pointer;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-.togglearea label span
-{
-	background-color: black;
-	height: 4px;
-	width: 70%;
-	margin: 2px 0px;
-}
-.togglearea
-{
-	display: none;
-}
-@media screen and (max-width: 700px)
-{
-	.navbar
-	{
-		flex-direction: column;
-		display: none;
-	}
-	#toggle:checked + .navbar
-	{
-		display: flex;
-	}
-	.togglearea
-	{	
-		display: flex;
-	}
-}
- */
 /* Slider Area start */
 .single-slide {
 	background-size: cover;
@@ -492,7 +446,7 @@ a.box-btn:hover i.fa {
 }
 
 .slider-area {
-	height: 100vh;
+	height: 50vh;
 }
 .single-slide:before {
 	position: absolute;
@@ -509,9 +463,9 @@ a.box-btn:hover i.fa {
 
 .slide-table {
 	width: 100%;
-	height: 80vh;
+	height: 50vh;
 	display: table;
-	text-align: center
+	text-align: center;
 }
 
 .slide-tablecell {
@@ -522,12 +476,12 @@ a.box-btn:hover i.fa {
 }
 .slide-table h2 {
 	color: #fff;
-	font-size: 30px;
-	line-height: 1.2;
+	font-size: 23px;
+	line-height: 1.5;
 	font-weight: 700;
-	margin: 20px 0;
+	margin: 10px 0;
 	text-transform: uppercase;
-	padding-bottom:10px;
+	padding-bottom: 10px;
 }
 
 .slide-table p {
@@ -589,7 +543,8 @@ a.box-btn:hover i.fa {
 	position: relative;
 	display: inline-block;
 	color: #fff;
-	padding-bottom: 20px;
+	padding-bottom: 15px;
+	font-size: 20px;
 }
 
 .slide-table p {
@@ -681,6 +636,9 @@ a.box-btn:hover i.fa {
   padding: 20px 0;
   color: #18A554;
   text-transform: capitalize;
+}
+.single-exp a {
+	margin-top: 25px;
 }
 .single-exp h3 {
   font-size: 18px;
@@ -865,9 +823,10 @@ a.box-btn:hover i.fa {
 .footer-area {
   background-color: #333;
   color: #fff;
+  max-height: 500px;
 }
 .row.footer-info {
-  padding-bottom: 70px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #fff;
 }
 .single-footer {
@@ -893,7 +852,7 @@ a.box-btn:hover i.fa {
 }
 .row.footer-text p {
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 10px;
 }
 /* --------HOME PAGE END---------- */
 
@@ -901,7 +860,7 @@ a.box-btn:hover i.fa {
 
 .single-con-info.pt-50.pb-50 {
   border: 1px solid #ddd;
-  margin: 10p0x 0 0 0;
+  margin: 10px 0 0 0;
   margin: 50px 0 50px 0;
 }
 .single-con-info.pt-50.pb-50 h6 {
@@ -917,12 +876,11 @@ a.box-btn:hover i.fa {
 }
 
 .contact-form-area {
-  padding: 50px 0 0 0;
-  background-color: #;
-  color: #fff;
+	padding: 30px;
+	background-color: #;
+	color: #fff;
 }
 .contact-form-area h4 {
-  text-align: center;
   font-size: 30px;
   margin-bottom: 40px;
   color:#333;
@@ -932,13 +890,13 @@ a.box-btn:hover i.fa {
   float: left;
 }
 .single-input input {
-  width: 546px;
-  height: 50px;
-  padding-left: 20px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  background-color: #;
-  color: #333;
+	width: 400px;
+	height: 40px;
+	padding-left: 20px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	background-color: #;
+	color: #333;
 }
 .single-input.s-2 input[type="date"] {
 	color: #999;
@@ -951,14 +909,14 @@ a.box-btn:hover i.fa {
 	margin-left: 8px;
 }
 .contact-form-area textarea {
-  width: 100%;
-  background-color: #;
-  border: 1px solid #ccc;
-  margin-top: 15px;
-  height: 200px;
-  color:#333;
-  padding-left: 20px;
-  padding-top: 20px;
+	width: 45%;
+	background-color: #;
+	border: 1px solid #ccc;
+	margin-top: 15px;
+	height: 75px;
+	color: #333;
+	padding-left: 20px;
+	padding-top: 20px;
 }
 .con-form-adiv a{
 	display: inline-block;
@@ -971,7 +929,6 @@ a.box-btn:hover i.fa {
 .con-form-adiv {
 	display: block;
 	margin: 0 auto;
-	text-align: center;
 }
 /* hadith page */
 .single-hadith {

@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Title -->
-		<title>Client Web App for AL-Murshed</title>
+		<title>Mosque</title>
 	<!-- Font Google -->
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
@@ -61,17 +61,18 @@
 				<div class="sidenav">
 					<a href="index.html">Home</a>
 					<a href="about.html">About</a>
-					<a href="five-basics.html">Five Basics</a>
+					<a href="five_basics.html">Five Basics</a>
 					<a href="mosque.html">Mosque</a>
-					<a href="prayer-times.html">Prayer Times</a>
-					<a href="scholars-video.html">Scholar's Video</a>
+					<a href="prayer_times.html">Prayer Times</a>
+					<a href="scholars_video.html">Scholar's Video</a>
 					<a href="hadith.html">Hadith</a>
-					<a href="muslim-names.html">Muslim Names</a>
+					<a href="muslim_names.html">Muslim Names</a>
 					<a href="duas.html">Dua's</a>
 					<a href="zakaat.html">Zakaat</a>
 					<a href="fitra.html">Fitra</a>
 					<a href="faq.html">FAQ</a>
-					<a href="contact.html">Contact Us</a></span>
+					<a href="contact.html">Contact Us</a>
+					<a href="login.html">Log In</a>
 				</div>
 				</ul>
 			</div>
@@ -101,33 +102,113 @@
       </section>
       <!-- Slider Area End -->
 		<!-- Experience area start -->
-				<section class="experience-area pb-50">
+				<section class="experience-area pt-50 pb-50">
 					<div class="container">
 						<div class="row">
 						<div class="col-md-3">
-							<a href="mosques-on-map.html"><div class="single-exp">
+							<a href="mosques_on_map.html"><div class="single-exp">
 								<img src="assets/img/icons/mosque.png" alt="img" />
 								<h2>Mosques on Map</h2>
 							</div></a>
 						</div>
 						<div class="col-md-3">
-							<a href="nearest-mosque-list.html"><div class="single-exp">
+							<a href="nearest_mosque_list.html"><div class="single-exp">
 								<img src="assets/img/icons/mosque1.png" alt="img" />
 								<h2>Nearest Mosque List</h2>
 							</div></a>
 						</div>
 						<div class="col-md-3">
-							<a href="add-mosque.html"><div class="single-exp">
-								<img src="assets/img/icons/mosque2.png" alt="img" />
-								<h2>Add Mosque</h2>
-							</div></a>
+					 <div class="single-exp">
+					 <img src="assets/img/icons/mosque2.png" alt="img" />
+					 <h2> Add your Mosque </h2>
+                        <div class="modal fade" id="myModal">
+                           <div class="modal-dialog">   <div class="modal-content">    <div class="modal-header">    <h1></h1>              
+                               </div>
+							   <div class="modal-body">  
+								<form>
+								<div class="form-row">
+								<div class="form-group col-md-6">
+									<label for="inputEmail4"></label>
+									<input type="email" class="form-control" id="inputEmail4">
+							</div>
+							<div class="form-group col-md-6">
+							<label for="inputPassword4"></label>
+								<input type="password" class="form-control" id="inputPassword4">
+							</div>
+					</div>
+					<div class="form-group">
+							<label for="inputAddress"></label>
+							<input type="text" class="form-control" id="inputAddress">
 						</div>
+					<div class="form-group">
+					<label for="inputAddress2"></label>
+					<input type="text" class="form-control" id="inputAddress2" >
+					</div>
+				<div class="form-row">
+					<div class="form-group col-md-6">
+					<label for="inputCity"></label>
+					<input type="text" class="form-control" id="inputCity">
+				</div>
+				</div>
+				<button type="submit" class="btn btn-primary">add mosque</button>
+						</form>
+                               </div>
+							   <div class="modal-footer">            					<input class="btn btn-primary" data-dismiss="modal" value="Close"/>             
+                               </div>
+                           </div>                         
+                           </div>
+                        </div>
+							<a href="#" class="box-btn" data-toggle="modal" data-target="#myModal">add mosque</a>
+						
+					</div>
+                     </div>
 						<div class="col-md-3">
-							<a href="update-jamah.html"><div class="single-exp">
-								<img src="assets/img/icons/salat.png" alt="img" />
-								<h2>Update Jama'h</h2>
-							</div></a>
-						</div>			
+					 <div class="single-exp">
+					 <img src="assets/img/icons/salat.png" alt="img" />
+					 <h2> jama'h </h2>
+                        <div class="modal fade" id="myModal">
+                           <div class="modal-dialog">   <div class="modal-content">    <div class="modal-header">    <h1></h1>              
+                               </div>
+							   <div class="modal-body">  
+								<form>
+								<div class="form-row">
+								<div class="form-group col-md-6">
+									<label for="inputEmail4"></label>
+									<input type="email" class="form-control" id="inputEmail4">
+							</div>
+							<div class="form-group col-md-6">
+							<label for="inputPassword4"></label>
+								<input type="password" class="form-control" id="inputPassword4">
+							</div>
+					</div>
+					<div class="form-group">
+					<label for="inputAddress2"></label>
+					<input type="text" class="form-control" id="inputAddress2" >
+					</div>
+				<div class="form-row">
+					<div class="form-group col-md-6">
+					<label for="inputCity"></label>
+					<input type="text" class="form-control" id="inputCity">
+				</div>
+				</div>
+				<div class="form-row">
+					<div class="form-group col-md-6">
+					<label for="inputCity"></label>
+					<input type="text" class="form-control" id="inputCity">
+				</div>
+				</div>
+				<button type="submit" class="btn btn-primary">update</button>
+						</form>
+                               </div>
+							   <div class="modal-footer">            					<input class="btn btn-primary" data-dismiss="modal" value="Close"/>             
+                               </div>
+                           </div>                         
+                           </div>
+                        </div>
+							<a href="#" class="box-btn" data-toggle="modal" data-target="#myModal">update jama'h</a>
+						
+					</div>
+                     </div>			
 						</div>
 					</div>
 				</section>
