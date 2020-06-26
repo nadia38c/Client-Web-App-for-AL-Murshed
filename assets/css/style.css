@@ -682,6 +682,13 @@ a.box-btn:hover i.fa {
   color: #18A554;
   text-transform: capitalize;
 }
+.single-exp h3 {
+  font-size: 18px;
+  padding: 20px 0;
+  color: #333;
+  text-transform: capitalize;
+  text-align: center;
+}
 .single-exp p {
   text-align: justify;
   font-size: 14px;
