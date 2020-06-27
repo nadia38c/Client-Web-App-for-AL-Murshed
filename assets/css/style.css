@@ -387,7 +387,10 @@ a.box-btn:hover i.fa {
   a.title{display:none;}
   
 }
-
+ @media screen and (max-width: 700px) {
+  a.title{display:none;}
+  
+}
 /* Slider Area start */
 .single-slide {
 	background-size: cover;
