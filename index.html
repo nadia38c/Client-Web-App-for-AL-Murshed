@@ -375,6 +375,14 @@
 			document.getElementById("mySidenav").style.width = "0";
 			}
 		</script>
+		<script type="application/javascript">
+			$document(ready).(function(){
+				$('ul a').click(function(){
+					$('a').removeClass("active");
+					$(this).addClass("active");
+				})
+			})
+		</script>
 	  <!-- Main JS -->
       <script src="assets/js/jquery.min.js"></script>
       <!-- Popper JS -->

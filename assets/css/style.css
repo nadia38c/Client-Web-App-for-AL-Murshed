@@ -391,6 +391,9 @@ a.box-btn:hover i.fa {
   a.title{display:none;}
   
 }
+.active{
+	background-color: tomato;
+}
 /* Slider Area start */
 .single-slide {
 	background-size: cover;
@@ -675,13 +678,8 @@ a.box-btn:hover i.fa {
 	height: 100%;
 }
 .single-founders-and-developers h3 {
-	/* color: #18A554;
-	margin: 16px 0 10px 0;
-	font-size: 16px;
-	font-weight: 400; */
 	font-size: 22px;
 	margin: 16px 0 10px 0;
-  /* margin-bottom: 20px; */
 	color: #18A554;
 }
 .single-founders-and-developers p {
@@ -773,7 +771,7 @@ a.box-btn:hover i.fa {
 .footer-area {
   background-color: #333;
   color: #fff;
-  max-height: 500px;
+  max-height: 600px;
 }
 .row.footer-info {
   padding-bottom: 10px;
