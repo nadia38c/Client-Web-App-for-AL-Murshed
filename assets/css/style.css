@@ -1,6 +1,5 @@
 /* client web app for al-murshed /*
 /* Base CSS */
-
 .alignleft {
 	float: left;
 	margin-right: 15px;
@@ -74,19 +73,12 @@ a {
 	-webkit-transition: .4s;
 	transition: .4s
 }
-
-/* a:hover {
-	text-decoration: none;
-}
- */
 .pt-100 {
 	padding-top: 100px;
 }
-
 .pb-100 {
 	padding-bottom: 100px;
 }
-
 .pt-50 {
 	padding-top: 50px;
 }
@@ -117,7 +109,6 @@ a {
 	padding-bottom:20px;
 }
 /* 1. Preloader */
-
 .flex-center {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -154,18 +145,18 @@ a {
 		   background-color:#1abc9c
 }
 .dots .dot:nth-child(3) {
-	-webkit-animation-delay: .4s;
-	        animation-delay: .4s;
+	-webkit-animation-delay: .3s;
+	        animation-delay: .3s;
 		   background-color:#3498db
 }
 .dots .dot:nth-child(4) {
-	-webkit-animation-delay: .6s;
-	        animation-delay: .6s;
+	-webkit-animation-delay: .4s;
+	        animation-delay: .4s;
 		   background-color:#9b59b6
 }
 .dots .dot:nth-child(5) {
-	-webkit-animation-delay: .8s;
-	        animation-delay: .8s;
+	-webkit-animation-delay: .6s;
+	        animation-delay: .6s;
 		   background-color:#e74c3c
 }
 @-webkit-keyframes dot-dot-dot {
@@ -329,9 +320,7 @@ a.box-btn:hover i.fa {
 	font-weight: bold;
 	text-transform: uppercase;
 }
-/* .header a {
-	color: #209DF0 ;
-} */
+
 .header a.title{color: #18A554 ;}
 .header a:hover {
     color: #18A554;
@@ -381,18 +370,10 @@ a.box-btn:hover i.fa {
  @media screen and (max-height: 450px) {
   .sidenav {padding-top: 10px;}
   .sidenav a {font-size: 18px;}
-  /* .sidenav {padding-left: 10px;} 
-  .sidenav {width: 100%;}
-  .sidenav{ flex-direction: column; display: flex;} */
   a.title{display:none;}
-  
 }
  @media screen and (max-width: 700px) {
   a.title{display:none;}
-  
-}
-.active{
-	background-color: tomato;
 }
 /* Slider Area start */
 .single-slide {
@@ -767,11 +748,130 @@ a.box-btn:hover i.fa {
   font-family: "poppins";
   font-weight: 400;
 }
+
+/* home gallery area start*/
+.masonry-menu {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.single-gallery img{
+	width:100%;
+	height:100%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  right: 0;
+  bottom: 0;
+}
+.single-gallery {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  overflow:hidden;
+  transition:.3s;
+}
+.single-gallery:hover .overlay::before{
+	top: 0%;
+	visibility:visible;
+	transition:.5s;
+}
+.single-gallery:hover .overlay::after{
+	bottom: 0%;
+	visibility:visible;
+	transition:.5s;
+}
+.single-gallery:hover .overlay-content{
+	visibility:visible;
+	/* transition: .4s; */
+}
+.overlay-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	content: '';
+	z-index: 1;
+	visibility: hidden;
+	transition: .5s;
+}
+.overlay::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 50%;
+  top: -50%;
+  left: 0%;
+  background-color: #000;
+  opacity: .7;
+  visibility: hidden;
+  transition:.5s;
+}
+.overlay::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 50%;
+  bottom: -50%;
+  left: 0%;
+  background-color: #000;
+  opacity: .7;
+  visibility: hidden;
+  transition:.5s;
+}
+.gallry-menu button {
+	border: 1px solid #209DF0;
+	padding: 10px 15px;
+	background-color: inherit;
+	margin-right: 5px;
+}
+.gallry-menu button.active {
+	background-color: #209DF0;
+	color: #fff;
+	border: 1px solid #209DF0;
+}
+.gallery-header-social-1 a i {
+  color: #fff;
+  margin: 0 5px;
+  font-size: 22px;
+  width: 42px;
+  height: 42px;
+  border: 1px solid #fff;
+  line-height: 42px;
+  text-align: center;
+}
+.gallery-header-social-2 a i {
+  color: #fff;
+  margin: 0 5px;
+  font-size: 22px;
+  width: 42px;
+  height: 42px;
+  border: 1px solid #fff;
+  line-height: 42px;
+  text-align: center;
+  margin-top: 10px;
+}
+.gallery-header-social-1 {
+  margin-bottom: 125px;
+  transition: 0.9s;
+  opacity:0;
+}
+.single-gallery:hover .gallery-header-social-1 {
+  margin-bottom: 0px;
+  transition: .9s;
+   opacity:1;
+}
+
 /* footer area start */
 .footer-area {
   background-color: #333;
   color: #fff;
-  max-height: 600px;
 }
 .row.footer-info {
   padding-bottom: 10px;
