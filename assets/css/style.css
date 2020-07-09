@@ -519,9 +519,10 @@ a.box-btn:hover i.fa {
 	color: #fff;
 }
 .card-header {
-	padding: 15px;
+	padding: 5px;
 	background-color: #18A554;
-	border-bottom: 1px solid #635CDB;
+	border-bottom: 1px solid #248816;
+	margin: 3px;
 }
 
 .btn-link {
@@ -1032,10 +1033,10 @@ a.box-btn:hover i.fa {
 	color: #333;
 }
 /* FAQ PAGE AREA START */
-.card-header, .card-link,.card-link:hover{
-	background-color:#333;
-	text-align:left;
-	color:#fff;
+.card-header, .card-link, .card-link:hover {
+	background-color: #18A554;
+	text-align: left;
+	color: #fff;
 }
 .card-body{
 	padding:10px 10px;
