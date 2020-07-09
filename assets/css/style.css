@@ -298,15 +298,6 @@ a.box-btn:hover i.fa {
 	font-size: 14px;
 	transition: 0.3s;
 }
- .navbar-toggler-icon {
-	display: inline-block;
-	width: 1.20em;
-	height: 1.20em;
-	vertical-align: middle;
-	content: "";
-	background: no-repeat center center;
-	background-size: 100%;
-}
 
 .header {
 	padding: 10px 0;
@@ -330,7 +321,7 @@ a.box-btn:hover i.fa {
 	padding-right: 0;
 }
 .header.sticky a {
-	color: #333;
+	color: #18A554;
 }
 #navbarNav ul li:last-child a {
 	padding-right: 0;
@@ -352,6 +343,7 @@ a.box-btn:hover i.fa {
   display: block;
   transition: 0.3s;
   border-bottom: 2px dotted #22202212;
+  background-color: inherit;
 }
 
 .sidenav a:hover{
@@ -360,12 +352,17 @@ a.box-btn:hover i.fa {
   font-weight:bold;
   transition: 0.5s;
 }
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+
+.sidenav a.active {
+	background-color: #18A554;
+	color: #fff;
+	border: 1px solid #18A554;
+}
+.navbar-toggler-icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	border:none;
 }
  @media screen and (max-height: 450px) {
   .sidenav {padding-top: 10px;}
@@ -374,6 +371,11 @@ a.box-btn:hover i.fa {
 }
  @media screen and (max-width: 700px) {
   a.title{display:none;}
+  .navbar-toggler{width:100%;}
+}
+@media screen and (min-width: 700px){
+	.navbar-toggler{display:none;}
+	
 }
 /* Slider Area start */
 .single-slide {
@@ -789,7 +791,6 @@ a.box-btn:hover i.fa {
 }
 .single-gallery:hover .overlay-content{
 	visibility:visible;
-	/* transition: .4s; */
 }
 .overlay-content {
 	position: absolute;
@@ -826,15 +827,15 @@ a.box-btn:hover i.fa {
   transition:.5s;
 }
 .gallry-menu button {
-	border: 1px solid #209DF0;
+	border: 1px solid #18A554;
 	padding: 10px 15px;
 	background-color: inherit;
 	margin-right: 5px;
 }
 .gallry-menu button.active {
-	background-color: #209DF0;
+	background-color: #18A554;
 	color: #fff;
-	border: 1px solid #209DF0;
+	border: 1px solid #18A554;
 }
 .gallery-header-social-1 a i {
   color: #fff;
